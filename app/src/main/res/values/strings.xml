@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Jungle Brew</string>
+    <string name="MainPageText">The Jungle is a mystical place, full of all kinds of fascinating creatures. Take this quiz to find out which of these animals best represents you!</string>
+    <string name="submit_choice">SUBMIT CHOICE</string>
+    <string name="submit">SUBMIT</string>
+    <string name="DefaultResultText">You are super cool - so cool in fact, that you don\'t belong in the jungle - you belong in the ocean like this dolphin!</string>
+    <string name="defaultCaption">It\'s a jungle out there!</string>
+    <string name="playAgain">PLAY AGAIN</string>
+    <string-array name="quiz_array">
+        <item>Strongly Agree</item>
+        <item>Agree</item>
+        <item>Somewhat Agree</item>
+        <item>Neither Agree nor Disagree</item>
+        <item>Somewhat Disagree</item>
+        <item>Disagree</item>
+        <item>Strongly Disagree</item>
+    </string-array>
+</resources>
