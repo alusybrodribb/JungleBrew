@@ -21,9 +21,9 @@ public class ResultActivity extends AppCompatActivity {
     private ImageView mSpeechChevron;
     private EditText mCaption;
     private Button mSubmitButton;
-    private Results mResults = new Results();
     private int mXAxis;
     private int mYAxis;
+    private Results mResults;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,7 @@ public class ResultActivity extends AppCompatActivity {
         mSubmitButton = (Button) findViewById(R.id.submitButton);
         mCaption = (EditText) findViewById(R.id.captionEditText);
         mSpeechChevron = (ImageView) findViewById(R.id.speechChevron);
+        mResults = new Results();
         loadResult();
         mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +72,7 @@ public class ResultActivity extends AppCompatActivity {
         } else {
             drawable = getResources().getDrawable(result.getBackgroundImageId());
         }
-        Toast.makeText(this, "You are a " + result.getAnimal() + "!", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "You are " + result.getAnimal() + "!", Toast.LENGTH_LONG).show();
         mBackgroundImage.setImageDrawable(drawable);
         mResultTextView.setText(result.getAnimalBlurb());
     }

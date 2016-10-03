@@ -73,7 +73,6 @@
 
         <ImageView
             android:layout_width="50dp"
-            android:layout_height="50dp"
             android:rotation="180"
             app2:srcCompat="@drawable/speech_bubble"
             android:layout_below="@+id/resultTextView"
@@ -83,7 +82,8 @@
             android:layout_marginLeft="125dp"
             android:layout_marginStart="125dp"
             android:id="@+id/speechChevron"
-            android:visibility="invisible"/>
+            android:visibility="invisible"
+            android:layout_height="50dp"/>
 
 
     </RelativeLayout>

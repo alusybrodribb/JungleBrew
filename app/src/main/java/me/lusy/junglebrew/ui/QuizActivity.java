@@ -58,8 +58,7 @@ public class QuizActivity extends AppCompatActivity {
                 //parse result
                 String choice = String.valueOf(mAnswerSpinner.getSelectedItem());
                 mResultsParser.parseQuestion(mCurrentQuestion, choice);
-
-               // Toast.makeText(QuizActivity.this, mResultsParser.showCoordinates() , Toast.LENGTH_SHORT).show();
+               Toast.makeText(QuizActivity.this, mResultsParser.showCoordinates() , Toast.LENGTH_SHORT).show();
                 mQuestionNumber++;
                 if (mQuestionNumber < mQuiz.getLength()) {
                     loadQuestion(mQuestionNumber);
